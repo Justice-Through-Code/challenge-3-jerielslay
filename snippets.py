@@ -9,9 +9,9 @@ def snippet_1():
     v = 2
 
     if u * v == 10:
-        print(f"The product of c ({u}) and v ({v}) is 10")
+        print(f"The product of u ({u}) and v ({v}) is 10")
     else:
-        print(f"The product of u ({u}) and v ({v}) is not 10")
+        print(f"The product of c ({u}) and v ({v}) is not 10")
 
 
 def snippet_2():
@@ -61,5 +61,5 @@ def snippet_5():
 
     o = (m != n)
 
-    print (f"The value of o ({o}) is False since Python is case-sensitive.")
+    print (f"The value of o ({o}) is True since Python is case-sensitive.")
     assert(o == True)  # <-- DO NOT EDIT THIS LINE

@@ -26,18 +26,20 @@ def stock_purchases():
     # 1.4 TODO: Use `if/elif/else` conditional logic to determine how much stock the client can buy,
     # and save it in a variable
     if stock_name == "Amazon" or stock_name == "amazon":
-        stock_amt = amazon / dollars
+        stock_amt = dollars // amazon
+        stock = amazon
     if stock_name == "Apple" or stock_name == "apple":
-        stock_amt = apple / dollars
+        stock_amt = dollars // apple
+        stock = apple
     if stock_name == "Facebook" or stock_name == "facebook":
-        stock_amt = fb / dollars
+        stock_amt = dollars // fb
+        stock = fb
     if stock_name == "Google" or stock_name == "google":
-        stock_amt = google / dollars
+        stock_amt = dollars // google
+        stock = google
     if stock_name == "Microsoft" or stock_name == "microsoft":
-        stock_amt = msft / dollars
-    else:
-        print("Stock not available")
-
+        stock_amt = dollars // msft
+        stock = msft
 
     # 1.5 TODO: Once you've calculated the number of stocks that can be purchased,
     # Use an f-string to print the result for the client, ala:
@@ -45,4 +47,4 @@ def stock_purchases():
     def shares():
         return stock_amt 
     
-    print(f'{client} has {dollars} to invest and can buy {stock_amt} shares of {stock_name} at the current price of {stock_purchases}')
+    print(f'{client} has ${dollars} to invest and can buy {stock_amt} shares of {stock_name} at the current price of ${stock}.')
